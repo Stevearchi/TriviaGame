@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NBA trivia!</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link type='text/css' href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- div that holds all the questions and header-->
+    <div id=main>
+        <header class="jumbotron">
+            <h1>NBA Trivia!!!</h1>
+        </header>
+        <div>
+            <!-- div that holds the questions & time remaining-->
+            <div id="timeRemain"></div>
+            <form>
+                <div>
+                    <div>
+                        Who is the NBA's all time scoring leader?
+                    </div>
+                    <input type="radio" name='1' value='mj' data-correct=false>Michael Jordan&nbsp;
+                    <input type="radio" name='1' value='wc' data-correct=false>Wilt Chamberlain&nbsp;
+                    <input type="radio" name='1' value='lbj' data-correct=false>LeBron James&nbsp;
+                    <input type="radio" name='1' value='km' data-correct=false>Karl Malone&nbsp;
+                    <input type="radio" name='1' value='kaj' id="cor1" data-correct=true>Kareem Abdul-Jabbar&nbsp;
+                </div>
+                <div>
+                    Who is the NBA's all time assists leader?
+                </div>
+                <input type="radio" name='2' value='js' id="cor2">John Stockton&nbsp;
+                <input type="radio" name='2' value='magj'>Magic Johnson&nbsp;
+                <input type="radio" name='2' value='cp'>Chris Paul&nbsp;
+                <input type="radio" name='2' value='sn'>Steve Nash&nbsp;
+                <input type="radio" name='2' value='jk'>Jason Kidd&nbsp;
+                <div>
+                    Who holds the record for single season scoring average?
+                </div>
+                <input type="radio" name='3' value='kb'>Kobe Bryant&nbsp;
+                <input type="radio" name='3' value='wc' id="cor3">Wilt Chamberlain&nbsp;
+                <input type="radio" name='3' value='mj'>Michael Jordan&nbsp;
+                <input type="radio" name='3' value='jh'>James Harden&nbsp;
+                <input type="radio" name='3' value='kaj'>Kareem Abdul-Jabbar&nbsp;
+                <div>
+                    Who is the NBA's all time rebounds leader?
+                </div>
+                <input type="radio" name='4' value='br'>Bill Russell&nbsp;
+                <input type="radio" name='4' value='td'>Tim Duncan&nbsp;
+                <input type="radio" name='4' value='mm'>Moses Malone&nbsp;
+                <input type="radio" name='4' value='kg'>Kevin Garnet&nbsp;
+                <input type="radio" name='4' value='wc' id="cor4">Wilt Chamberlain&nbsp;
+                <div>
+                    Who has the record for most NBA championships?
+                </div>
+                <input type="radio" name='5' value='lb'>Larry Bird&nbsp;
+                <input type="radio" name='5' value='sc'>Stephen Curry&nbsp;
+                <input type="radio" name='5' value='mj'>Michael Jordan&nbsp;
+                <input type="radio" name='5' value='br' id="cor5">Bill Russell&nbsp;
+                <input type="radio" name='5' value='magj'>Magic Johnson&nbsp;
+
+                <div>
+                    <input type="submit" id='submit'>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id='results'></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>

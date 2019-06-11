@@ -17,21 +17,59 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <link type='text/css' href="assets/css/style.css">
+    <!-- I can not figure out why the css isn't working properly from the link below, so I'm using style tags -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+    <style>
+        header {
+            background-image: url('assets/images/basketball.jpg');
+            margin: 0;
+            height: 14em;
+            color: #5de5fb;
+            text-align: center;
+
+        }
+
+        h1 {
+            padding: 77px;
+        }
+
+        #main {
+            background-image: url('assets/images/background.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 1000em;
+            color:#ece8dd
+        }
+
+        .question {
+            margin:.5em;
+            margin-top:2em;
+        }
+
+        .submit{
+            margin-top:4em;
+        }
+    </style>
 </head>
 
 <body>
     <!-- div that holds all the questions and header-->
-    <div id=main>
-        <header class="jumbotron">
-            <h1>NBA Trivia!!!</h1>
+    <div class="background">
+        <!-- <img src="assets/images/nba_background.jpg" class='backgroundImage'> -->
+        <header>
+
+            <h1>NBA Trivia!!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NBA
+                Trivia!!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NBA Trivia!!!</h1>
+
         </header>
-        <div>
+        <div id="main">
             <!-- div that holds the questions & time remaining-->
+
             <div id="timeRemain"></div>
-            <form>
+            <form class="form-check">
                 <div>
-                    <div>
+                    <div class = 'question'>
                         Who is the NBA's all time scoring leader?
                     </div>
                     <input type="radio" name='1' value='mj' data-correct=false>Michael Jordan&nbsp;
@@ -40,7 +78,7 @@
                     <input type="radio" name='1' value='km' data-correct=false>Karl Malone&nbsp;
                     <input type="radio" name='1' value='kaj' id="cor1" data-correct=true>Kareem Abdul-Jabbar&nbsp;
                 </div>
-                <div>
+                <div class = 'question'>
                     Who is the NBA's all time assists leader?
                 </div>
                 <input type="radio" name='2' value='js' id="cor2">John Stockton&nbsp;
@@ -48,7 +86,7 @@
                 <input type="radio" name='2' value='cp'>Chris Paul&nbsp;
                 <input type="radio" name='2' value='sn'>Steve Nash&nbsp;
                 <input type="radio" name='2' value='jk'>Jason Kidd&nbsp;
-                <div>
+                <div class = 'question'>
                     Who holds the record for single season scoring average?
                 </div>
                 <input type="radio" name='3' value='kb'>Kobe Bryant&nbsp;
@@ -56,7 +94,7 @@
                 <input type="radio" name='3' value='mj'>Michael Jordan&nbsp;
                 <input type="radio" name='3' value='jh'>James Harden&nbsp;
                 <input type="radio" name='3' value='kaj'>Kareem Abdul-Jabbar&nbsp;
-                <div>
+                <div class = 'question'>
                     Who is the NBA's all time rebounds leader?
                 </div>
                 <input type="radio" name='4' value='br'>Bill Russell&nbsp;
@@ -64,7 +102,7 @@
                 <input type="radio" name='4' value='mm'>Moses Malone&nbsp;
                 <input type="radio" name='4' value='kg'>Kevin Garnet&nbsp;
                 <input type="radio" name='4' value='wc' id="cor4">Wilt Chamberlain&nbsp;
-                <div>
+                <div class = 'question'>
                     Who has the record for most NBA championships?
                 </div>
                 <input type="radio" name='5' value='lb'>Larry Bird&nbsp;
@@ -73,13 +111,14 @@
                 <input type="radio" name='5' value='br' id="cor5">Bill Russell&nbsp;
                 <input type="radio" name='5' value='magj'>Magic Johnson&nbsp;
 
-                <div>
+                <div class='submit'>
                     <input type="submit" id='submit'>
                 </div>
             </form>
         </div>
+        <div id='results'></div>
     </div>
-    <div id='results'></div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
         integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>

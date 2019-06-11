@@ -1,0 +1,30 @@
+header {
+    background-image: url('assets/images/basketball.jpg');
+    margin: 0;
+    height: 14em;
+    color: #5de5fb;
+    text-align: center;
+
+}
+
+h1 {
+    padding: 77px;
+}
+
+#main {
+    background-image: url('assets/images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 1000em;
+    color:#ece8dd
+}
+
+.question {
+    margin:.5em;
+    margin-top:2em;
+}
+
+.submit{
+    margin-top:4em;
+}
